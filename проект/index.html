@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Weaver</title>
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar">
+    <div class="logo">
+        <img src="icons/logo.png" alt="SK">
+    </div>
+
+    <nav class="menu">
+
+    <a href="dashboard.html" class="menu-btn">
+        <img src="icons/dashboard.png" alt="Dashboard">
+    </a>
+
+    <a href="courses.html" class="menu-btn">
+        <img src="icons/courses.png" alt="Courses">
+    </a>
+
+    <a href="messages.html" class="menu-btn">
+        <img src="icons/messages.png" alt="Messages">
+    </a>
+
+    <a href="live.html" class="menu-btn">
+        <img src="icons/live.png" alt="Live">
+    </a>
+
+</nav>
+
+
+    <button class="user-button">
+        <img src="icons/user-avatar.png" alt="User">
+    </button>
+</aside>
+
+
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main class="main">
+        <div class="topbar">
+            <h1>Дашбоард</h1>
+
+            <div class="top-actions">
+                <input type="text" placeholder="поиск…" class="search">
+                <button class="icon-btn">
+                    <img src="icons/notification.png" alt="Notifications">
+            </button>
+                <button class="icon-btn">
+                    <img src="icons/settings.png" alt="Settings">
+            </button>
+        </div>
+    </div>
+
+
+        <!-- OVERVIEW -->
+        <section class="overview">
+            <div class="card">
+                <h4>Текущие курсы</h4>
+                <p class="value">3</p>
+            </div>
+            <div class="card">
+                <h4>Активные прототипы</h4>
+                <p class="value">7</p>
+            </div>
+            <div class="card">
+                <h4>Время Обучения</h4>
+                <p class="value">3ч 15м</p>
+            </div>
+            <div class="card">
+                <h4>Оценка платформы</h4>
+                <p class="value">240</p>
+            </div>
+        </section>
+
+
+        <section class="stats-layout">
+
+            <!-- STUDY STATS -->
+            <div class="card chart-card">
+                <div class="card-header">
+                    <h4>Учебная статистика</h4>
+                    <div class="switch">
+                        <button class="active">Неделя</button>
+                        <button class="active">Месяц</button>
+                    </div>
+                </div>
+
+                <div class="bars">
+                    <div class="bar" style="height: 30%"></div>
+                    <div class="bar" style="height: 60%"></div>
+                    <div class="bar" style="height: 45%"></div>
+                    <div class="bar" style="height: 50%"></div>
+                    <div class="bar highlight" style="height: 90%"></div>
+                    <div class="bar" style="height: 55%"></div>
+                    <div class="bar" style="height: 50%"></div>
+                </div>
+
+                <div class="days">
+                    <span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span>
+                    <span class="active-day">ПТ</span><span>СБ</span><span>ВС</span>
+                </div>
+            </div>
+
+            <!-- PROGRESS -->
+            <div class="card progress-card">
+                <h4>Прогресс</h4>
+                <div class="circle">
+                    <div class="circle-inner">
+                        <span>45%</span>
+                    </div>
+                </div>
+                <div class="legend">
+                    <span>🟦 курсы</span>
+                    <span>🔵 прототипы</span>
+                </div>
+            </div>
+
+
+            <!-- LIVE EVENTS -->
+            <div class="card live-card">
+                <h4>Обучение в лайве</h4>
+
+                <div class="event">
+                    <img src="https://via.placeholder.com/60" alt="">
+                    <div class="event-info">
+                        <p>Заходи на пару.</p>
+                        <small>Дмитриев Н.В · <span class="live">● Live</span></small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ACTIVITY -->
+        <section class="activity">
+            <h3>Обновления</h3>
+
+            <div class="activity-item">
+                <img src="icons/Property" class="avatar">
+                <div>
+                    <strong>Новый курс</strong> сейчас <br>
+                    <span class="topic">Читать продолжение...</span>
+                </div>
+            </div>
+
+            <div class="activity-item">
+                <img src="icons/Property" class="avatar">
+                <div>
+                    <strong>Новые возможности</strong> вчера <br>
+                    <span class="topic">Читать продолжение…</span>
+                </div>
+            </div>
+
+            <div class="activity-item">
+                <img src="icons/Property" class="avatar">
+                <div>
+                    <strong>Исправление ошибок</strong> вчера <br>
+                    <span class="topic">Читать продолжение…</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- MY COURSES -->
+        <section class="courses">
+            <h3>Мои Курсы</h3>
+
+            <div class="course-grid">
+
+                <div class="course-card purple">
+                    <h4>Структуры Данных</h4>
+                    <small>Дмитриев Н.В</small>
+                    <div class="pie"></div>
+                </div>
+
+                <div class="course-card blue">
+                    <h4>Основы Программирования</h4>
+                    <small>Ярдяков В.О</small>
+                    <div class="pie"></div>
+                </div>
+
+                <div class="course-card cyan">
+                    <h4>Теория Алгоритмов</h4>
+                    <small>Дмитриев Н.В</small>
+                    <div class="pie"></div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>

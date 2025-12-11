@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Weaver</title>
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar">
+    <div class="logo">
+        <img src="icons/logo.png" alt="SK">
+    </div>
+
+    <nav class="menu">
+
+    <a href="dashboard.html" class="menu-btn">
+        <img src="icons/dashboard.png" alt="Dashboard">
+    </a>
+
+    <a href="courses.html" class="menu-btn active">
+        <img src="icons/courses.png" alt="Courses">
+    </a>
+
+    <a href="messages.html" class="menu-btn">
+        <img src="icons/messages.png" alt="Messages">
+    </a>
+
+    <a href="live.html" class="menu-btn">
+        <img src="icons/live.png" alt="Live">
+    </a>
+
+</nav>
+
+
+    <button class="user-button">
+        <img src="icons/user-avatar.png" alt="User">
+    </button>
+</aside>
+
+
+
+    <!-- ============ MAIN CONTENT ============ -->
+   <main class="main">
+        <div class="topbar">
+            <h1>Персональный учебный план</h1>
+
+            <div class="top-actions">
+                <input type="text" placeholder="поиск…" class="search">
+                <button class="icon-btn">
+                    <img src="icons/notification.png" alt="Notifications">
+            </button>
+                <button class="icon-btn">
+                    <img src="icons/settings.png" alt="Settings">
+            </button>
+        </div>
+    </div>
+ <!-- Progress Section -->
+        <section class="progress-section">
+            <h2>Прогресс</h2>
+
+            <div class="progress-cardd">
+                <img src="icons/progress-bg.png" class="progress-bg">
+        </section>
+
+
+        <!-- Статус -->
+        <section class="status">
+            <div class="status-card">
+                <img src="icons/book.png" class="s-icon">
+                <p><strong>3/7</strong> курсы</p>
+            </div>
+
+            <div class="status-card">
+                <img src="icons/quizzes.png" class="s-icon">
+                <p><strong>30/70</strong> викторины</p>
+            </div>
+
+            <div class="status-card">
+                <img src="icons/prototype.png" class="s-icon">
+                <p><strong>2</strong> прототипы</p>
+            </div>
+
+            <div class="status-card">
+                <img src="icons/time.png" class="s-icon">
+                <p><strong>2ч</strong> время обучения</p>
+            </div>
+        </section>
+
+
+        <!-- Зарегистрированные курсы -->
+        <section class="enrolled">
+            <div class="enrolled-header">
+                <h2>Зарегистрированные курсы</h2>
+
+                <!-- Кнопка ведущая на новую страницу -->
+                <a href="catalog.html" class="catalog-btn">
+                    Каталог курсов
+                </a>
+            </div>
+
+            <div class="course-item">
+                <img src="icons/purple-book.png" class="course-icon">
+                <div class="course-info">
+                    <h4>Веб-приложение с БД</h4>
+                    <div class="course-progress"></div>
+                </div>
+
+                <div class="course-stats">0/10</div>
+                <div class="course-stats">0/5</div>
+                <button class="more-btn">⋮</button>
+            </div>
+
+            <div class="course-item">
+                <img src="icons/book.png" class="course-icon">
+                <div class="course-info">
+                    <h4>Разработка API</h4>
+                    <div class="course-progress"></div>
+                </div>
+
+                <div class="course-stats">0/10</div>
+                <button class="more-btn">⋮</button>
+            </div>
+
+            <div class="course-item">
+                <img src="icons/purple-book.png" class="course-icon">
+                <div class="course-info">
+                    <h4>Поиск и сортировка</h4>
+                    <div class="badge">Выполнено</div>
+                </div>
+                <button class="more-btn">⋮</button>
+            </div>
+
+            <div class="course-item">
+                <img src="icons/book.png" class="course-icon">
+                <div class="course-info">
+                    <h4>Динамическое программирование</h4>
+                    <div class="badge">Выполнено</div>
+                    
+                </div>
+                <button class="more-btn">⋮</button>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- SIDE CONTENT (Right column) -->
+    <aside class="right-side">
+
+        <!-- Calendar card -->
+        <div class="calendar-card">
+            <h3>Декабрь 2025</h3>
+            <div class="calendar-grid">
+                <span>26</span><span>27</span><span>28</span><span>29</span>
+                <span class="active-day">30</span><span>01</span><span>02</span>
+            </div>
+
+            <div class="deadline">
+                <img src="icons/book.png">
+                <div>
+                    <strong>Дедлайны</strong>
+                    <p>Задание 04</p>
+                    <small> Модуль 3: Графика и файлы…</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Рекомендаии -->
+        <div class="featured">
+    <h2>Рекомендации</h2>
+
+    <div class="featured-card">
+        <div class="details">
+            <span>Внимание!</span>
+        </div>
+
+        <h3>Пройдите тестирование</h3>
+        <p>Адаптивное тестирование необходимо для того чтобы составить персональный план обучения.</p>
+
+        <div class="featured-author">
+            <img src="icon/avatar.png" alt="">
+            <span>Дмитриев Н.В</span>
+        </div>
+
+        
+        <button class="adaptive-btn" onclick="window.location.href='adaptive.html'">
+            Адаптивное тестирование
+        </button>
+
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

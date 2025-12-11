@@ -1,0 +1,1033 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 400;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    ;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+      font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    background: #99d5ff;
+background: linear-gradient(180deg,rgba(153, 213, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    color: #333;
+    
+}
+
+.layout {
+    display: flex;
+}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+    width: 85px;
+    height: 100vh;
+    background: #051b2c;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-image: url("icons/logo.png"); /* ← заменяешь здесь */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Кнопки меню */
+.menu-btn {
+    width: 55px;
+    height: 55px;
+    background: #07263d;
+    border: none;
+    border-radius: 14px;
+    margin: 12px 0;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s;
+}
+
+.menu-btn img {
+    width: 26px;
+    height: 26px;
+    opacity: 0.85;
+}
+
+.menu-btn:hover {
+    background: #0b3556;
+}
+
+.menu-btn.active {
+    background: #2D9CDB;
+}
+
+.menu-btn.active img {
+    opacity: 1;
+}
+
+/* Кнопка пользователя снизу */
+.user-button {
+    margin-top: auto;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.user-button img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #0d6efd;
+}
+
+
+
+/* ---------- MAIN ---------- */
+.main {
+    flex: 1;
+    padding: 25px 40px;
+
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    
+
+}
+
+.icons-btn {
+    background: #07263d;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 14px;
+    margin: 12px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s ease;
+}
+
+.icon-btn img {
+    width: 20px;   
+    height: 20px;
+    opacity: 0.9;
+}
+
+.icon-btn:hover {
+    background: #2D9CDB;
+}
+
+.icon-btn:active {
+    background: #2D9CDB;
+    transform: scale(0.9);
+}
+.icon-btn.active img {
+    opacity: 1;
+}
+
+
+
+
+/* ---------- OVERVIEW ---------- */
+.overview {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.card .value {
+    font-size: 26px;
+    font-weight: bold;
+    
+}
+
+
+/* ---------- STUDY STATS ---------- */
+.stats-layout {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.chart-card .bars {
+    display: flex;
+    align-items: flex-end;
+    height: 160px;
+    gap: 10px;
+    margin: 20px 0;
+   
+    
+}
+
+.bar {
+    flex: 1;
+    background: #cde3fb;
+    border-radius: 8px;
+}
+
+.bar.highlight {
+    background: #2d9cdb;
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+
+/* ---------- PROGRESS ---------- */
+.progress-card .circle {
+    width: 140px;
+    height: 140px;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 10px solid #cde3fb;
+    border-top-color: #2d9cdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-inner span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2d9cdb;
+}
+
+.legend {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/* ---------- LIVE EVENTS ---------- */
+.live-card .event {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.live {
+    color: red;
+}
+
+/* ---------- ACTIVITY ---------- */
+.activity {
+    margin-top: 30px;
+}
+
+.activity-item {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 12px;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.topic {
+    color: #0d6efd;
+}
+
+/* ---------- COURSES ---------- */
+.courses {
+    margin-top: 30px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course-card {
+    padding: 20px;
+    border-radius: 15px;
+    color: #333;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.purple { background: #dcc6f9; }
+.blue   { background: #9fb2c2; }
+.cyan   { background: #92dbf3; }
+
+.pie-purple {
+    width: 80px;
+    height: 80px;
+    background: conic-gradient(#9747FF 0% 40%, #C89EFF 40% 100%);
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.pie-blue {
+    width: 80px;
+    height: 80px;
+    background: conic-gradient(#21cbff 0% 40%, #90bed8 40% 100%);
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.pie-cyan {
+    width: 80px;
+    height: 80px;
+    background: conic-gradient(blue 0% 40%, #44AFEC 40% 100%);
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+/* 2Я СТРАНИЦА */
+body {
+    margin: 0;
+      font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    background: #99d5ff;
+background: linear-gradient(180deg,rgba(153, 213, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    color: #333;
+}
+
+.layout {
+    display: flex;
+}
+
+
+
+/* PROGRESS */
+.progress-section h2 {
+    margin-bottom: 10px;
+}
+
+.progress-cardd {
+    position: relative;
+    background: #e7d4ff;
+    border-radius: 14px;
+    padding: 50px;
+    height: 160px;
+    width: 1000px;
+}
+
+.progress-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.progress-line {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    width: calc(100% - 100px);
+    height: 8px;
+    background: #b685ff;
+    border-radius: 4px;
+}
+
+.progress-man {
+    position: absolute;
+    bottom: 40px;
+    left: 40%;
+}
+
+.progress-percent {
+    position: absolute;
+    left: 45%;
+    bottom: 15px;
+    background: white;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+/* STATUS */
+.status {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.status-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+.s-icon {
+    width: 28px;
+}
+
+/* рег курсы */
+.enrolled {
+    margin-top: 30px;
+}
+
+.enrolled-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-btn {
+    background: #0d6efd;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    transition: 0.25s ease;
+     align-items: center;
+    text-decoration: none;
+}
+
+.catalog-btn:hover {
+    background: #082f5c;
+    transform: translateY(-2px);
+}
+
+.catalog-btn:active {
+    transform: scale(0.97);
+}
+
+.course-item {
+    display: grid;
+    grid-template-columns: 60px 1fr 70px 70px 30px;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 14px;
+}
+
+.course-icon {
+    width: 45px;
+}
+
+.course-progress {
+    width: 1200px;
+    height: 12px;
+    background: #d8e3f0;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.course-stats {
+    text-align: center;
+    color: #2d90ff;
+}
+
+.badge {
+    padding: 4px 10px;
+    background: #d4f0ff;
+    border-radius: 8px;
+    font-size: 12px;
+
+    color: #2693d6;
+}
+
+.more-btn {
+    
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+/* RIGHT SIDE */
+.right-side {
+    width: 330px;
+    padding: 25px 20px;
+}
+
+/* Календарь */
+.calendar-card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+}
+
+.calendar-grid {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+}
+
+.calendar-grid .active-day {
+    background: #0d6efd;
+    color: white;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6px;
+}
+
+/* Рекомендации */
+.featured-card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+.featured-card.dark {
+    background: #052844;
+    color: white;
+}
+
+.f-author {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+    
+    
+}
+
+.f-author img {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.adaptive-btn {
+    background: #0d6efd;      
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.adaptive-btn:hover {
+    background: #082f5c;
+    transform: translateY(-2px);
+}
+
+.adaptive-btn:active {
+    transform: scale(0.97);
+}
+
+/*СТРАНИЦА ТЕСТИРОВАНИЯ*/
+/* ---------- LAYOUT ---------- */
+.layout {
+    display: flex;
+}
+
+/* ---------- MAIN TOPBAR ---------- */
+
+.page-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.right-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ---------- COURSE LAYOUT ---------- */
+.course-layout {
+    display: flex;
+    margin-top: 30px;
+}
+
+/* ---------- LEFT PANEL ---------- */
+.lessons-panel {
+    width: 250px;
+    background: #f8f8f8;
+    padding: 25px;
+    border-radius: 12px;
+    height: calc(100vh - 140px);
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.lessons-title {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.lessons-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lesson-item {
+    display: block;
+    padding: 12px 15px;
+    background: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    transition: 0.2s;
+}
+
+.lesson-item:hover {
+    background: #eef6ff;
+}
+
+.lesson-item.active {
+    background: #2D9CDB;
+    color: #fff;
+    border-color: #2D9CDB;
+}
+
+/* ---------- LESSON CONTENT ---------- */
+.lesson-content {
+    margin-left: 40px;
+    flex: 1;
+    max-width: 850px;
+}
+
+.lesson-content h2 {
+    margin-top: 35px;
+    margin-bottom: 12px;
+}
+
+.lesson-content p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+/* ---------- IMAGE PLACEHOLDER ---------- */
+.img-placeholder {
+    width: 100%;
+    height: 220px;
+    background: #d5d9dd;
+    border-radius: 8px;
+    margin: 25px 0;
+}
+
+/* ---------- NAV BUTTONS ---------- */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.nav-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #e0e6eb;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.nav-btn.next {
+    background: #2D9CDB;
+    color: #fff;
+}
+
+/* NAV BUTTONS HOVER ANIMATION ---------- */
+
+.nav-btn {
+    position: relative;
+    overflow: hidden;
+    transition: 0.25s ease;
+    transform: translateZ(0);
+}
+
+/* Общее поведение при наведении */
+.nav-btn:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Волна подсветки при наведении */
+.nav-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    transition: 0.3s;
+}
+
+.nav-btn:hover::after {
+    left: 0;
+}
+
+/* Для синей кнопки NEXT — немного ярче на ховере */
+.nav-btn.next {
+    transition: 0.25s ease;
+}
+
+.nav-btn.next:hover {
+    background: #1d8ac7;
+    box-shadow: 0 6px 18px rgba(45, 156, 219, 0.35);
+    transform: scale(1.05);
+}
+
+/* ---------- КАРТИНКИ К ТЕСТИРОВАНИЮ ---------- */
+
+.img-wrapper {
+    width: 100%;
+    height: auto;
+    background: #d5d9dd;
+    border-radius: 10px;
+    overflow: hidden;       
+    margin: 25px 0;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;           
+    display: block;
+    object-fit: cover;      
+}
+
+/* анимации кнопок под lesson */
+
+.lesson-item {
+    position: relative;
+    overflow: hidden;
+    transition: 0.25s ease;
+}
+
+
+.lesson-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+
+.lesson-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    transition: 0.35s ease;
+}
+
+.lesson-item:hover::after {
+    left: 0;
+}
+
+
+.lesson-item.active {
+    transform: none;
+    box-shadow: none;
+    background: #2D9CDB;
+    color: #fff;
+}
+
+.lesson-item.active:hover {
+    background: #1d8ac7;
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(45, 156, 219, 0.35);
+}
+
+/* ОКНО ОТВЕТА ДЛЯ ТЕСТИРОЛВАНИЯ */
+
+.answer-block {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.answer-block label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Сами поле для ответа */
+.answer-input {
+    width: 100%;
+    min-height: 120px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1.5px solid #d6d6d6;
+    background: #fafafa;
+    font-size: 15px;
+    resize: vertical;
+    transition: 0.25s ease;
+    outline: none;
+}
+
+/* Анимация при фокусе */
+.answer-input:focus {
+    border-color: #2D9CDB;
+    box-shadow: 0 0 12px rgba(45, 156, 219, 0.25);
+    background: #fff;
+}
+
+/* Кнопка отправки */
+.answer-submit {
+    padding: 12px 24px;
+    align-self: flex-start;
+    border-radius: 10px;
+    border: none;
+    background: #2D9CDB;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+/* Анимации для кнопки */
+.answer-submit:hover {
+    background: #1d8ac7;
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(45, 156, 219, 0.35);
+}
+
+.answer-submit:active {
+    transform: scale(0.97);
+}
+
+
+
+/* СТРАНИЦА КАТАЛОГОВ КУРСОВ */
+.page-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 4px;
+    color: #777;
+}
+
+/* ---------- SEARCH DISCUSSION ---------- */
+.discussion-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.search-box {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    background: #f5f5f5;
+    border-radius: 30px;
+}
+
+.search-box img {
+    width: 18px;
+    opacity: 0.7;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.ask-btn {
+    padding: 12px 30px;
+    background: #07263d;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+.ask-btn:hover {
+    background: #0b3556;
+    transform: scale(1.05);
+}
+
+/* ---------- TAGS ---------- */
+.tags {
+    margin-top: 25px;
+    display: flex;
+    gap: 12px;
+}
+
+.tag {
+    padding: 8px 14px;
+    background: #fafafa;
+    border-radius: 14px;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.tag:hover {
+    background: #ebf6ff;
+    border-color: #2D9CDB;
+}
+
+/* ---------- DISCUSSION LIST ---------- */
+.discussion-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.discussion-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f7f7f7;
+    padding: 18px 22px;
+    border-radius: 12px;
+    transition: 0.25s ease;
+}
+
+.discussion-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.icon-bg {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #c4b5fd, #93c5fd);
+    border-radius: 12px;
+}
+
+.left h3 {
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.left p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* ---------- RIGHT SIDE ---------- */
+.right {
+    text-align: right;
+}
+
+.counter {
+    background: #eef4ff;
+    border: 1px solid #d4e1ff;
+    padding: 6px 14px;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.right span {
+    color: #777;
+    font-size: 14px;
+}
+
+.coursee-icon {
+    width: 110px;
+    height: 110px;
+    border-radius: 14px;
+    overflow: hidden; /* важно */
+    background: #e5e5e5; /* если вдруг нет картинки */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coursee-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* изображение красиво скроет лишнее */
+    display: block;
+}
+
+
+
+
+
